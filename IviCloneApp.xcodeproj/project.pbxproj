@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,16 @@
 		2ADB63BC2704AD740071C23B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADB63BB2704AD740071C23B /* Preview Assets.xcassets */; };
 		2ADB63C72704AD740071C23B /* IviCloneAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB63C62704AD740071C23B /* IviCloneAppTests.swift */; };
 		2ADB63D22704AD740071C23B /* IviCloneAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB63D12704AD740071C23B /* IviCloneAppUITests.swift */; };
+		2ADB63E32704AE5E0071C23B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2ADB63E22704AE5E0071C23B /* GoogleService-Info.plist */; };
+		2ADB63FA2704AF8E0071C23B /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB63F92704AF8E0071C23B /* HomePage.swift */; };
+		2ADB640D2704B1A20071C23B /* ModelHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB640C2704B1A20071C23B /* ModelHomePage.swift */; };
+		2ADB64122704B1F10071C23B /* HomePageTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB64112704B1F10071C23B /* HomePageTwo.swift */; };
+		2ADB641A2704B2790071C23B /* ModelHomePageTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB64192704B2790071C23B /* ModelHomePageTwo.swift */; };
+		2ADB64222704B8330071C23B /* HomePageThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB64212704B8330071C23B /* HomePageThree.swift */; };
+		2ADB642A2704B84D0071C23B /* ModelHomePageThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB64292704B84D0071C23B /* ModelHomePageThree.swift */; };
+		36B650B8EF6B018F659468F2 /* Pods_IviCloneAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA3B77DD5C767DA4013CD3E /* Pods_IviCloneAppTests.framework */; };
+		5A1C942C7BF81090F4A7D423 /* Pods_IviCloneApp_IviCloneAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0528186AFF39B0B0D731530 /* Pods_IviCloneApp_IviCloneAppUITests.framework */; };
+		B02F3AD39AC9A72A0184085D /* Pods_IviCloneApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B98BF6E62A03A115E609C75 /* Pods_IviCloneApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +55,22 @@
 		2ADB63CD2704AD740071C23B /* IviCloneAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IviCloneAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADB63D12704AD740071C23B /* IviCloneAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IviCloneAppUITests.swift; sourceTree = "<group>"; };
 		2ADB63D32704AD740071C23B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ADB63E22704AE5E0071C23B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2ADB63F92704AF8E0071C23B /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		2ADB640C2704B1A20071C23B /* ModelHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelHomePage.swift; sourceTree = "<group>"; };
+		2ADB64112704B1F10071C23B /* HomePageTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTwo.swift; sourceTree = "<group>"; };
+		2ADB64192704B2790071C23B /* ModelHomePageTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelHomePageTwo.swift; sourceTree = "<group>"; };
+		2ADB64212704B8330071C23B /* HomePageThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageThree.swift; sourceTree = "<group>"; };
+		2ADB64292704B84D0071C23B /* ModelHomePageThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelHomePageThree.swift; sourceTree = "<group>"; };
+		3B98BF6E62A03A115E609C75 /* Pods_IviCloneApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IviCloneApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E6B1245DFE38BCCF1A5DE3C /* Pods-IviCloneAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IviCloneAppTests.release.xcconfig"; path = "Target Support Files/Pods-IviCloneAppTests/Pods-IviCloneAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		772E0DFEA8AA24D7DD2BE67E /* Pods-IviCloneApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IviCloneApp.release.xcconfig"; path = "Target Support Files/Pods-IviCloneApp/Pods-IviCloneApp.release.xcconfig"; sourceTree = "<group>"; };
+		79F8BAAFECB019306D330184 /* Pods-IviCloneApp-IviCloneAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IviCloneApp-IviCloneAppUITests.release.xcconfig"; path = "Target Support Files/Pods-IviCloneApp-IviCloneAppUITests/Pods-IviCloneApp-IviCloneAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7BC5714A7C9500E62CF441C6 /* Pods-IviCloneApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IviCloneApp.debug.xcconfig"; path = "Target Support Files/Pods-IviCloneApp/Pods-IviCloneApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A6DBC5FF64EC6FF99425AE30 /* Pods-IviCloneApp-IviCloneAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IviCloneApp-IviCloneAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-IviCloneApp-IviCloneAppUITests/Pods-IviCloneApp-IviCloneAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AFA3B77DD5C767DA4013CD3E /* Pods_IviCloneAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IviCloneAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0528186AFF39B0B0D731530 /* Pods_IviCloneApp_IviCloneAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IviCloneApp_IviCloneAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5405FE3F7D763930DD3F8D7 /* Pods-IviCloneAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IviCloneAppTests.debug.xcconfig"; path = "Target Support Files/Pods-IviCloneAppTests/Pods-IviCloneAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B02F3AD39AC9A72A0184085D /* Pods_IviCloneApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36B650B8EF6B018F659468F2 /* Pods_IviCloneAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +94,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A1C942C7BF81090F4A7D423 /* Pods_IviCloneApp_IviCloneAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A59CEE26F308770037969F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7BC5714A7C9500E62CF441C6 /* Pods-IviCloneApp.debug.xcconfig */,
+				772E0DFEA8AA24D7DD2BE67E /* Pods-IviCloneApp.release.xcconfig */,
+				A6DBC5FF64EC6FF99425AE30 /* Pods-IviCloneApp-IviCloneAppUITests.debug.xcconfig */,
+				79F8BAAFECB019306D330184 /* Pods-IviCloneApp-IviCloneAppUITests.release.xcconfig */,
+				D5405FE3F7D763930DD3F8D7 /* Pods-IviCloneAppTests.debug.xcconfig */,
+				3E6B1245DFE38BCCF1A5DE3C /* Pods-IviCloneAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		281A429492DF3791B30E67EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B98BF6E62A03A115E609C75 /* Pods_IviCloneApp.framework */,
+				B0528186AFF39B0B0D731530 /* Pods_IviCloneApp_IviCloneAppUITests.framework */,
+				AFA3B77DD5C767DA4013CD3E /* Pods_IviCloneAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2ADB63A82704AD6F0071C23B = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +131,8 @@
 				2ADB63C52704AD740071C23B /* IviCloneAppTests */,
 				2ADB63D02704AD740071C23B /* IviCloneAppUITests */,
 				2ADB63B22704AD700071C23B /* Products */,
+				0A59CEE26F308770037969F3 /* Pods */,
+				281A429492DF3791B30E67EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +151,15 @@
 			children = (
 				2ADB63B42704AD700071C23B /* IviCloneAppApp.swift */,
 				2ADB63B62704AD700071C23B /* ContentView.swift */,
+				2ADB63F92704AF8E0071C23B /* HomePage.swift */,
+				2ADB640C2704B1A20071C23B /* ModelHomePage.swift */,
+				2ADB64112704B1F10071C23B /* HomePageTwo.swift */,
+				2ADB64192704B2790071C23B /* ModelHomePageTwo.swift */,
+				2ADB64212704B8330071C23B /* HomePageThree.swift */,
+				2ADB64292704B84D0071C23B /* ModelHomePageThree.swift */,
 				2ADB63B82704AD740071C23B /* Assets.xcassets */,
 				2ADB63BD2704AD740071C23B /* Info.plist */,
+				2ADB63E22704AE5E0071C23B /* GoogleService-Info.plist */,
 				2ADB63BA2704AD740071C23B /* Preview Content */,
 			);
 			path = IviCloneApp;
@@ -137,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2ADB63D62704AD740071C23B /* Build configuration list for PBXNativeTarget "IviCloneApp" */;
 			buildPhases = (
+				C75A54102AD6DF739BF31D6E /* [CP] Check Pods Manifest.lock */,
 				2ADB63AD2704AD700071C23B /* Sources */,
 				2ADB63AE2704AD700071C23B /* Frameworks */,
 				2ADB63AF2704AD700071C23B /* Resources */,
+				7EB76C968DCE7A0810D915C2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +217,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2ADB63D92704AD740071C23B /* Build configuration list for PBXNativeTarget "IviCloneAppTests" */;
 			buildPhases = (
+				A8CEEDED90BCA050088819E4 /* [CP] Check Pods Manifest.lock */,
 				2ADB63BE2704AD740071C23B /* Sources */,
 				2ADB63BF2704AD740071C23B /* Frameworks */,
 				2ADB63C02704AD740071C23B /* Resources */,
@@ -172,9 +236,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2ADB63DC2704AD740071C23B /* Build configuration list for PBXNativeTarget "IviCloneAppUITests" */;
 			buildPhases = (
+				20D5426A4E902B6848D40FB9 /* [CP] Check Pods Manifest.lock */,
 				2ADB63C92704AD740071C23B /* Sources */,
 				2ADB63CA2704AD740071C23B /* Frameworks */,
 				2ADB63CB2704AD740071C23B /* Resources */,
+				3912496F5B02E696CB3F0668 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +301,7 @@
 			files = (
 				2ADB63BC2704AD740071C23B /* Preview Assets.xcassets in Resources */,
 				2ADB63B92704AD740071C23B /* Assets.xcassets in Resources */,
+				2ADB63E32704AE5E0071C23B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,12 +321,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20D5426A4E902B6848D40FB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IviCloneApp-IviCloneAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3912496F5B02E696CB3F0668 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IviCloneApp-IviCloneAppUITests/Pods-IviCloneApp-IviCloneAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IviCloneApp-IviCloneAppUITests/Pods-IviCloneApp-IviCloneAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IviCloneApp-IviCloneAppUITests/Pods-IviCloneApp-IviCloneAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EB76C968DCE7A0810D915C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IviCloneApp/Pods-IviCloneApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IviCloneApp/Pods-IviCloneApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IviCloneApp/Pods-IviCloneApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8CEEDED90BCA050088819E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IviCloneAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C75A54102AD6DF739BF31D6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IviCloneApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2ADB63AD2704AD700071C23B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2ADB63B72704AD700071C23B /* ContentView.swift in Sources */,
+				2ADB64222704B8330071C23B /* HomePageThree.swift in Sources */,
+				2ADB642A2704B84D0071C23B /* ModelHomePageThree.swift in Sources */,
+				2ADB640D2704B1A20071C23B /* ModelHomePage.swift in Sources */,
+				2ADB641A2704B2790071C23B /* ModelHomePageTwo.swift in Sources */,
+				2ADB63FA2704AF8E0071C23B /* HomePage.swift in Sources */,
+				2ADB64122704B1F10071C23B /* HomePageTwo.swift in Sources */,
 				2ADB63B52704AD700071C23B /* IviCloneAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +590,7 @@
 		};
 		2ADB63D72704AD740071C23B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BC5714A7C9500E62CF441C6 /* Pods-IviCloneApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -436,6 +613,7 @@
 		};
 		2ADB63D82704AD740071C23B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 772E0DFEA8AA24D7DD2BE67E /* Pods-IviCloneApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -458,6 +636,7 @@
 		};
 		2ADB63DA2704AD740071C23B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5405FE3F7D763930DD3F8D7 /* Pods-IviCloneAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -480,6 +659,7 @@
 		};
 		2ADB63DB2704AD740071C23B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E6B1245DFE38BCCF1A5DE3C /* Pods-IviCloneAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +682,7 @@
 		};
 		2ADB63DD2704AD740071C23B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6DBC5FF64EC6FF99425AE30 /* Pods-IviCloneApp-IviCloneAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +703,7 @@
 		};
 		2ADB63DE2704AD740071C23B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79F8BAAFECB019306D330184 /* Pods-IviCloneApp-IviCloneAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
