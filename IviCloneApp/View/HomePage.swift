@@ -16,7 +16,7 @@ struct HomePage: View {
     }
     var body: some View {
         ZStack{
-            HomePageOne(modelHome: modelHome)
+            HomePageOne(modelHome: modelHome, model: model)
                 .blur(radius:modelHome.showAlert ? 10 : 0)
             
             if modelHome.showAlert == true{
@@ -39,7 +39,7 @@ struct HomePage_Previews: PreviewProvider {
 struct HomePageOne: View{
     
     @ObservedObject var modelHome: ModelView
-
+    @ObservedObject var model: SignUpModel
     var body: some View{
 
         TabView{
@@ -57,7 +57,7 @@ struct HomePageOne: View{
                 }
             }
             
-            HomePageThree().tabItem {
+            HomePageThree(model: model, modelHome: modelHome).tabItem {
                 VStack{
                     Image(systemName: "person")
                     Text("Профиль")
@@ -198,15 +198,15 @@ struct MyIvi: View {
                                                         .foregroundColor(Color.white)
                                                         .lineLimit(1)
                                                         .frame(width: 200, height: 30, alignment: .leading)
-                                                    HStack{
-                                                        Text("Бесплатно")
-                                                            .frame(alignment: .leading)
-                                                            .padding(.leading, 15)
-                                                            .font(.system(size: 23))
-                                                            .foregroundColor(Color.blue.opacity(0.70))
-                                                        
-                                                        Spacer()
-                                                    }
+//                                                    HStack{
+//                                                        Text("Бесплатно")
+//                                                            .frame(alignment: .leading)
+//                                                            .padding(.leading, 15)
+//                                                            .font(.system(size: 23))
+//                                                            .foregroundColor(Color.blue.opacity(0.70))
+//
+//                                                        Spacer()
+//                                                    }
                                                 }
                                             }
                                         }
@@ -282,12 +282,10 @@ struct AlertView: View {
                 VStack{
                     Button(action: {
                      
-                        model.payPay()
+                        modelHome.payPay()
                         
-//                        self.model.sum = model.sum - Double(399)
-//                        model.payPay()
 
-                }, label: { // Pay Balance func
+                }, label: {
                     Text("Приобрести за 399Р")
                         .font(.system(size: 30))
                         .fontWeight(.bold)
@@ -335,8 +333,10 @@ struct MoreFilm: View{
                         .padding(.horizontal, 5)
 
                     Spacer()
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: { // Pay Balance film
-                        Text("Купить")
+                    Button(action: {
+                        modelHome.payFilm()
+                    }, label: {
+                        Text(String(format:"Купить за %.0f", modelHome.filmCost[modelHome.idSelf] ?? 0))
                             .foregroundColor(.white)
                             .font(.title)
                             .padding(.bottom, 10)

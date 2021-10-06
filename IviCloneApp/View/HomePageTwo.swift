@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct HomePageTwo: View {
+    
     @StateObject var modelHome = ModelView()
     @StateObject var modelHomeTwo = ModelViewTwo()
+    
     var body: some View {
         VStack{
             TextFieldCust(modelHome: modelHome, modelHomeTwo: modelHomeTwo)
@@ -497,16 +499,16 @@ struct FilmBlock: View {
                                             .foregroundColor(Color.white)
                                             .lineLimit(1)
                                             .frame(width: 200, height: 30, alignment: .leading)
-                                        HStack{
-                                            Text("Бесплатно")
-                                                .frame(alignment: .leading)
-                                                .padding(.leading, 15)
-                                                .font(.system(size: 23))
-                                                .foregroundColor(Color.blue.opacity(0.70))
-                                            
-                                            Spacer()
-                                            
-                                        }
+//                                        HStack{
+//                                            Text("Бесплатно")
+//                                                .frame(alignment: .leading)
+//                                                .padding(.leading, 15)
+//                                                .font(.system(size: 23))
+//                                                .foregroundColor(Color.blue.opacity(0.70))
+//
+//                                            Spacer()
+//
+//                                        }
                                     }
                                 }
                             }

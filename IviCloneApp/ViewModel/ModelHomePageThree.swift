@@ -10,16 +10,6 @@ import Firebase
 
 class SignUpModel: ObservableObject{
     
-    @Published var sum = 0.0
-//        : Double{
-//        didSet{
-//            UserDefaults.standard.set(sum, forKey: "Balance")
-//        }
-//    }
-//    init(){
-//        self.sum = UserDefaults.standard.object(forKey: "Balance") as? Double ?? 0.0
-//    }
-    
     @Published var Viewregist = false
     @Published var textReg = ""
     @Published var passReg = ""
@@ -47,24 +37,6 @@ class SignUpModel: ObservableObject{
     @Published var ImageData = Data.init(count: 0)
     
     // Alert Pay
-    @Published var textPay = ""
-    @Published var alertPay = false
-        
-    func payPay(){
-     
-        if sum >= 0.0 {
-            self.sum = sum - Double(399)
-            let alertPayPay = UIAlertController(title: "Покупка", message: "Покупка совершена", preferredStyle: .alert)
-            alertPayPay.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
-            UIApplication.shared.windows.first?.rootViewController?.present(alertPayPay, animated: true)
-                                } else {
-            let alertPayPay = UIAlertController(title: "Покупка", message: "Недостаточно средств", preferredStyle: .alert)
-            alertPayPay.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
-            UIApplication.shared.windows.first?.rootViewController?.present(alertPayPay, animated: true)
-        }
-       
-
-    }
 
     func ResetPassword(){
        

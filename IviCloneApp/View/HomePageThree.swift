@@ -10,9 +10,10 @@ import Firebase
 
 struct HomePageThree: View {
     @StateObject var model = SignUpModel()
+    @StateObject var modelHome = ModelView()
     var body: some View {
         VStack{
-        SignUpPage(model: model)
+            SignUpPage(model: model, modelHome: modelHome)
            
         }
             
@@ -31,7 +32,7 @@ struct HomePageThree_Previews: PreviewProvider {
 
 struct SignUpPage: View {
     @ObservedObject var model: SignUpModel
-    
+    @ObservedObject var modelHome: ModelView
     var body: some View{
         
         ZStack{
@@ -78,12 +79,12 @@ struct SignUpPage: View {
                                 .foregroundColor(Color.white.opacity(0.70))
                                 .padding(.leading, 15)
                         Spacer()
-                        Button(action: {self.model.alertPay.toggle()}, label: {
+                        Button(action: {self.modelHome.alertPay.toggle()}, label: {
                             Text("Пополнить")
                                 .foregroundColor(Color.white.opacity(0.70))
                         })
                     }
-                    Text("P \(model.sum)")
+                    Text(String(format:"P \(modelHome.updateSum)"))
                         .foregroundColor(Color.white.opacity(0.70))
                         .padding(.leading, 15)
                
@@ -221,8 +222,8 @@ struct SignUpPage: View {
             ViewRegistCust(model: model)
         })
         
-            if model.alertPay == true{
-                  PayPaments(model: model)
+            if modelHome.alertPay == true{
+                PayPaments(model: model, modelHome: modelHome)
             }
             if model.Profile == true{
                 MiniViewSign(model: model)
@@ -586,6 +587,7 @@ struct ImagePick: UIViewControllerRepresentable {
 
 struct PayPaments: View {
     @ObservedObject var model: SignUpModel
+    @ObservedObject var modelHome: ModelView
     var body: some View{
         VStack{
             VStack{
@@ -593,7 +595,7 @@ struct PayPaments: View {
                     .padding(.top, 10)
                     .font(.system(size: 18))
                     .foregroundColor(Color.black.opacity(0.70))
-                TextField("Введите сумму", text: $model.textPay)
+                TextField("Введите сумму", text: $modelHome.textPay)
                     .keyboardType(.numberPad)
                     .padding(.horizontal, 15)
                     .padding(.vertical, 10)
@@ -604,21 +606,15 @@ struct PayPaments: View {
                    
                 Divider()
                 HStack{
-                    Button(action: {self.model.alertPay.toggle()}, label: {
+                    Button(action: {self.modelHome.alertPay.toggle()}, label: {
                         Text("Отмена")
                             .foregroundColor(.red)
                             .font(.system(size: 20))
                     }).padding(.horizontal,15)
                     Divider()
                     Button(action: {
-                        if Double(model.textPay) != nil {
-                            self.model.sum = model.sum + Double(model.textPay)!
-                            self.model.alertPay.toggle()
-                        }
-                         
-                            
-                        
-                        
+
+                        modelHome.Payment()
                     }, label: {
                         Text("Пополнить")
                             .foregroundColor(.red)
