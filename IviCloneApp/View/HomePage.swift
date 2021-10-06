@@ -10,6 +10,7 @@ import SwiftUI
 struct HomePage: View {
     @StateObject var modelHome = ModelView()
     @StateObject var model = SignUpModel()
+    
     init(){
         UITabBar.appearance().barTintColor = UIColor.darkGray
     }

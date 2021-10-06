@@ -151,12 +151,8 @@
 			children = (
 				2ADB63B42704AD700071C23B /* IviCloneAppApp.swift */,
 				2ADB63B62704AD700071C23B /* ContentView.swift */,
-				2ADB63F92704AF8E0071C23B /* HomePage.swift */,
-				2ADB640C2704B1A20071C23B /* ModelHomePage.swift */,
-				2ADB64112704B1F10071C23B /* HomePageTwo.swift */,
-				2ADB64192704B2790071C23B /* ModelHomePageTwo.swift */,
-				2ADB64212704B8330071C23B /* HomePageThree.swift */,
-				2ADB64292704B84D0071C23B /* ModelHomePageThree.swift */,
+				2AF2A8AD270DE25000E425B7 /* View */,
+				2AF2A8AC270DE23B00E425B7 /* ViewModel */,
 				2ADB63B82704AD740071C23B /* Assets.xcassets */,
 				2ADB63BD2704AD740071C23B /* Info.plist */,
 				2ADB63E22704AE5E0071C23B /* GoogleService-Info.plist */,
@@ -189,6 +185,26 @@
 				2ADB63D32704AD740071C23B /* Info.plist */,
 			);
 			path = IviCloneAppUITests;
+			sourceTree = "<group>";
+		};
+		2AF2A8AC270DE23B00E425B7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2ADB640C2704B1A20071C23B /* ModelHomePage.swift */,
+				2ADB64192704B2790071C23B /* ModelHomePageTwo.swift */,
+				2ADB64292704B84D0071C23B /* ModelHomePageThree.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2AF2A8AD270DE25000E425B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2ADB63F92704AF8E0071C23B /* HomePage.swift */,
+				2ADB64112704B1F10071C23B /* HomePageTwo.swift */,
+				2ADB64212704B8330071C23B /* HomePageThree.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
